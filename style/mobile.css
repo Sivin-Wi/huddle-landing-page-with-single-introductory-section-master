@@ -1,0 +1,147 @@
+@media only screen and (max-width:375px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --bgColor: hsl(257, 40%, 49%);
+        --softMagenta: hsl(300, 69%, 71%);
+        --headingFontFamily: 'Poppins', sans-serif;
+    }
+
+    @font-face {
+        font-family: 'Poppins', 'Open Sans';
+        src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'), url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        background-color: var(--bgColor);
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    .bgImg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    main {
+        width: 100%;
+        height: 100svh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 125px minmax(200px, 1fr) 90px;
+        grid-template-areas:
+            "header"
+            "content"
+            "footer";
+    }
+
+
+    header {
+        grid-area: header;
+        display: grid;
+        align-items: center;
+    }
+
+    header > .img > img {
+        margin-left: 40px;
+    }
+
+    section {
+        grid-area: content;
+    }
+
+    section > .container > .containerOne {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+    }
+
+    section > .container > .containerTwo > .subContainer {
+        display: grid;
+        width: 100%;
+        height: 343px;
+        align-content: space-evenly;
+        justify-items: center;
+    }
+
+    section > .container > .containerTwo > .subContainer > .heading > h2 {
+        line-height: 1.4;
+        text-align: center;
+        color: #fff;
+        font-family: var(--headingFontFamily) !important;
+        font-weight: 600;
+    }
+
+    section > .container > .containerTwo > .subContainer > .para {
+        width: 90%;
+    }
+
+    section > .container > .containerTwo > .subContainer > .para > p {
+        line-height: 1.6;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+    }
+
+
+    section > .container > .containerTwo > .subContainer > .button > button {
+        padding: 1.1em 6.6em;
+        border-radius: 25px;
+        background-color: #fff;
+        color: var(--bgColor);
+        border: none;
+        box-shadow: 7px 6px 16px 0 rgba(0, 0, 0, 0.356);
+    }
+
+    footer {
+        grid-area: footer;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+
+    footer > .logos {
+        display: grid;
+        justify-content: space-evenly;
+        grid-auto-flow: column;
+        width: 38%;
+        height: 50%;
+        align-content: center;
+    }
+
+    footer > .logos > .facebook {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+    footer > .logos > .x {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+    footer > .logos > .instagram {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+
+}
