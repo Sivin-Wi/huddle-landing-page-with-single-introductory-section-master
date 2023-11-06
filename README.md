@@ -24,8 +24,8 @@
 
 ### Links 🔗
 
-- Solution URL: [page]()
-- Live Site URL: [page]()
+- Solution URL: [page](https://www.frontendmentor.io/solutions/build-with-grid-and-flexbox-QG4L32uRdA)
+- Live Site URL: [page](https://sivin-wi.github.io/huddle-landing-page-with-single-introductory-section-master/)
 
 ## My process
 
